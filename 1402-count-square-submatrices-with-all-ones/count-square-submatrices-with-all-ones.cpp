@@ -1,10 +1,7 @@
 class Solution {
 public:
     int countSquares(vector<vector<int>>& matrix) {
-       // algo 
-       // go to every on and find for how many sq it is the bottom right one
-       // how? find the min of left up and digonaly up and the min will show kitne square ban sakte hai
-
+     
        vector<vector<int>> arr(matrix.size(),vector<int>(matrix[0].size(),0));
        for (int i=0;i<matrix.size();i++)
            arr[i][0]=matrix[i][0]; 
